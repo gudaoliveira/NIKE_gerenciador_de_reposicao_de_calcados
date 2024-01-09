@@ -1,4 +1,4 @@
-# 👟Footwear Replenishment Manager
+# 👟Gerenciador de Reposição de Calçados
 
 Problema: 
 - A empresa precisava saber qual a melhor forma de se preparar para manter o piso de vendas o mais reposto  o possível
