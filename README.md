@@ -19,8 +19,8 @@ Além disso, não tínhamos algumas informações básicas como:
 - Quantas caixas precisam ser repostas por lista de reposição?
 
 O primeiro passo foi automatizar a lista de reposição, e para isso, definimos horários específicos para realizar a reposição, sendo:
-<br>
-**09:00 - 12:00 - 14:00 - 16:00 - 18:00 - 20:00**
+<br><br>
+<div align="center"> <b>09:00 - 12:00 - 14:00 - 16:00 - 18:00 - 20:00</b> </div>
 <br>
 
 E para os saber quais os produtos vendidos, decidimos, em cada um desses intervalos de horário, puxar um relatório de quais os produtos vendidos. O próprio ERP que a empresa usa fornece a opção de exportar esse relatório em CSV, e esse relatório é consumido por uma planilha no google que já faz o tratamento e monta uma visualização organizada desses dados, levando em consideração:
@@ -39,6 +39,7 @@ Análises:
 <div align="center">
   
 [Clique aqui para acessar o projeto no Google Sheets](https://docs.google.com/spreadsheets/d/1mn2a6rvmRmbTJAmvRnIfbKGJGaze0Z7smsbyiP1VMl4/edit?usp=sharing)
+<br>
 [Clique aqui para acessar o Dashboard do projeto](https://lookerstudio.google.com/reporting/7ec11540-5f47-497a-9a0e-6b90426d62bc)
 <br>
 _(Para os scripts funcionarem corretamente, crie uma cópia na sua própria pasta do Google Drive)_
