@@ -72,13 +72,22 @@ Com isso, criei uma coluna nova que seria fixa, para concatenar o SKU, e outra p
 // M é a coluna "sku"
 ```
 
-é consumido por uma planilha no google que já faz o tratamento e monta uma visualização organizada desses dados, levando em consideração:
+![raw_data sheet](img/raw_data.png)
 
-- Se esse item é um calçado ou outro tipo de item
+Com isso, criei uma tela para receber esses dados e montar uma visualização organizada com os filtros necessários através da função QUERY
+```
+=QUERY(raw_data!A2:N;"
+select M, I, sum(G), N, min(L), B, A
+where A is not NULL and A = 'FOOTWEAR DIVISION' and L > 31
+group by M, I, N, B, A
+order by B
+label M'', I'', sum(G)'', N'', min(L)'',  B'', A''")
+```
+Essa Query basicamente verifica:
+- Se esse item é um calçado
 - Se, no estoque consta mais que 31 itens, já que é a quantidade mínima para a exposição do produto
 - Quais os tamanhos vendidos
-- Qual a quantidade desse item em estoque
-
+- Qual a quantidade desse item ainda em estoque
 
 <div align="center">
   
