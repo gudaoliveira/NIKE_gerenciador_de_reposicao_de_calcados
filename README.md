@@ -93,6 +93,7 @@ Essa Query basicamente verifica:
   
 ![Captura de Tela](img/screenshot.png)</div>
 
+## Coletando os dados dos repositores👷
 
 Análises:
 - O primeiro passo foi tentar entender qual o comportamento das métricas obtidas durante os dias da semana
