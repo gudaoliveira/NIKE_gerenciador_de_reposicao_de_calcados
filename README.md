@@ -95,6 +95,44 @@ Essa Query basicamente verifica:
 
 ## Coletando os dados dos repositores👷
 
+Após estruturar e padronizar a coleta dos dados de reposição, precisávamos entender como otimizar a coleta dos itens. Para isso, decidi criar um controle de reposição, onde o repositor preencheria alguns dados antes de iniciar a reposição, esse controle contém os seguintes dados:
+- ID `[Coluna Calculada]`
+- Data
+- Nome
+- Intervalo inicial dos dados (Hr)
+- Intervalo final dos dados (Hr)
+- Qtde
+- Início (Hr)
+- Fim (Hr)
+- Duração (min) `[Coluna Calculada]`
+- Caixas por minuto (CPM) `[Coluna Calculada]`
+
+E para que possa ter uma noção maior da performance, criei uma métrica chamada de CPM (Caixas por Minuto), resultada da razão entre a "Quantidade de caixas" sobre a "Duração". E com isso, podemos ter uma análise mais precisa e entender quais são os gargalos do processo
+
+<div align="center">
+  
+![Captura de Tela](img/dados_coletados.png)</div>
+
+## Analisando os dados coletados 🧐
+
+Com mais de 30 dias de dados coletados, pude partir para analisar os resultados. A minha primeira ideia era entender como os nossos dados se comportavam durante a semana, com isso, com algumas queries no Google Sheets, cheguei nesses resultados
+
+<div align="center">
+  
+![Captura de Tela](img/tabelas_de_analise.png)</div>
+
+Aqui podemos observar que: 
+- Os dias mais fortes da semana são `Domingo`, `Segunda` e `Sábado`
+- Terça é o dia com menos caixas para repor, por isso, também é o dia com a menor duração por lista
+- Coincidentemente, os dias que mais tem caixas para repor são os dias em que as reposições ocorrem mais rápidas
+
+Diferente do que é intuitivo, ao observar esses dados distribuidos pela semana percebemos que quanto maior a quantidade de caixas, mais rápido ocorre a reposição. E para provar essa hipótese, criei a visualização de `Quantidade de caixas por CPM`
+
+
+<div align="center">
+  
+![Captura de Tela](img/qtde_por_cpm.png)</div>
+
 Análises:
 - O primeiro passo foi tentar entender qual o comportamento das métricas obtidas durante os dias da semana
 - Depois busquei entender se havia alguma relação entre a quantidade de caixas e a velocidade da reposição
