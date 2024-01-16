@@ -93,7 +93,7 @@ Essa Query basicamente verifica:
   
 ![Captura de Tela](img/screenshot.png)</div>
 
-## Coletando os dados dos repositores👷
+## 👷Coletando os dados dos repositores
 
 Após estruturar e padronizar a coleta dos dados de reposição, precisávamos entender como otimizar a coleta dos itens. Para isso, decidi criar um controle de reposição, onde o repositor preencheria alguns dados antes de iniciar a reposição, esse controle contém os seguintes dados:
 - ID `[Coluna Calculada]`
@@ -113,7 +113,7 @@ E para que possa ter uma noção maior da performance, criei uma métrica chamad
   
 ![Captura de Tela](img/dados_coletados.png)</div>
 
-## Analisando os dados coletados 🧐
+## 🧐Analisando os dados coletados 
 
 Com mais de 30 dias de dados coletados, pude partir para analisar os resultados. A minha primeira ideia era entender como os nossos dados se comportavam durante a semana, com isso, com algumas queries no Google Sheets, cheguei nesses resultados
 
@@ -133,10 +133,19 @@ Diferente do que é intuitivo, ao observar esses dados distribuidos pela semana 
   
 ![Captura de Tela](img/qtde_por_cpm.png)</div>
 
-Análises:
-- O primeiro passo foi tentar entender qual o comportamento das métricas obtidas durante os dias da semana
-- Depois busquei entender se havia alguma relação entre a quantidade de caixas e a velocidade da reposição
-- Também era interessante saber qual o período com a maior quantidade de caixas para a reposição
+Aqui fica claro que quanto a tendência é que quanto mais caixas, mais rápida é feita a reposição.
+
+Também precisava entender, qual o horário que mais precisa de reposição, e para isso criei a visualização de `Quantidade de caixas por hora`
+
+<div align="center">
+  
+![Captura de Tela](img/qtde_por_hora.png)</div>
+
+E com isso percebemos que o pico de reposição se dá entre os horários de 16:00 a 18:00
+
+## 🧠Conclusões e Recomendações 
+
+Assim como já esperava, os finais da semana são os dias onde ocorrem a maior quantidade de reposições, com a adição de segunda feira que se igualou
 
 ## 🛠️Experimente você mesmo
 <div align="center">
@@ -153,16 +162,5 @@ _(Para os scripts funcionarem corretamente, crie uma cópia na sua própria past
 
 ---
 
-## 💻Como funciona?
-
-- Simplesmente altere os valores nas células **"D2"** e **"H2"** para o número de linhas e colunas do tabuleiro, respectivamente, e clique no botão **"GERAR"**.
-- Isso é tudo, agora espere a planilha imprimir o tabuleiro.
-- Observe que o botão **GERAR** deve ter o script _[start.gs](https://github.com/gudaoliveira/dinamic_chess_board/blob/main/start.gs)_ atribuído para funcionar.
-
-## 🧠Problemas Conhecidos
-Este é uma ótima peça de portifólio para mim, mas poderia ser uma ótima peça para nós! Portanto, sinta-se à vontade para contribuir de qualquer maneira que você ache que melhoraria o projeto.
-
-- Uma coisa que observei é que com valores grandes, a planilha pode ficar um pouco lenta, então, isso seria interessante a se melhorar.
-- Além disso, talvez adicionar mais opções de formatação seria uma boa ideia.
 
 Feito com 💞 no Brasil💚💛
