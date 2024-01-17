@@ -2,6 +2,8 @@
 
 Esse foi o meu primeiro trabalho com análise de dados, onde busquei aplicar alguns conhecimentos e utilizar algumas ferramentas que estava estudando no momento. Trata-se de um estudo sobre a reposição do piso de vendas de uma loja Nike na qual trabalhei por um tempo.
 
+
+
 ## ⚠️Introdução
 
 Quem trabalha com o varejo sabe que passamos o ano inteiro se programando e preparando para os dois últimos meses do ano, mês de Black Friday e Natal. Mas esse período não é só feito dessas sazonalidades, algumas pessoas entram de férias, algumas recebem seu décimo terceiro, e isso tudo contribui para tornar essa época o período de maior vendas no ano.
@@ -128,12 +130,11 @@ Aqui podemos observar que:
 
 Diferente do que é intuitivo, ao observar esses dados distribuidos pela semana percebemos que quanto maior a quantidade de caixas, mais rápido ocorre a reposição. E para provar essa hipótese, criei a visualização de `Quantidade de caixas por CPM`
 
-
 <div align="center">
   
 ![Captura de Tela](img/qtde_por_cpm.png)</div>
 
-Aqui fica claro que quanto a tendência é que quanto mais caixas, mais rápida é feita a reposição.
+Aqui fica claro que a tendência é que quanto mais caixas, mais rápida é feita a reposição.
 
 Também precisava entender, qual o horário que mais precisa de reposição, e para isso criei a visualização de `Quantidade de caixas por hora`
 
@@ -143,9 +144,18 @@ Também precisava entender, qual o horário que mais precisa de reposição, e p
 
 E com isso percebemos que o pico de reposição se dá entre os horários de 16:00 a 18:00
 
-## 🧠Conclusões e Recomendações 
+## 🖥️ Acompanhamento
 
-Assim como já esperava, os finais da semana são os dias onde ocorrem a maior quantidade de reposições, com a adição de segunda feira que se igualou
+É importante entender que essas métricas vão variar de acordo com o tempo. Quanto mais registros forem feitos maior se torna a precisão das análises e mais insights podemos tirar dos dados, sem contar que o fator humano ainda se torna muito presente nos resultados anotados. Pensando nisso, para que os reponsáveis possam acompanhar a evolução dos resultados, [desenvolvi um dashboard](https://lookerstudio.google.com/reporting/7ec11540-5f47-497a-9a0e-6b90426d62bc) que facilita a coleta desses insights
+
+<div align="center">
+  
+![dashboard](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/ea233112-b870-4ce8-8d8d-91b305ea46bd)</div>
+
+
+## 🧠Conclusões
+
+Assim como já esperava, os finais da semana, com a adição da segunda feira, são os dias onde ocorrem a maior quantidade de reposições, e os horários de pico se dão entre 16:00 até as 18:00, em alguns casos se estendendo até mais tarde do expediente. Como a velocidade de reposição é proporcional a quantidade de caixas, não faria sentido aumentar a quantidade de listas no dia para suprir a necessidade, já que mais lista diminuiriam a quantidade de caixas e naturalmente a lista seria feita em um tempo maior, ou seja, com uma velocidade menor. Portanto a ideia para melhorar o desempenho seria realizar uma escala horizontal do processo, ou seja, nos horários de pico, ter mais de um repositor realizando a mesma lista, o que garante que a mesma quantidade de caixas seja entregue em um menor espaço de tempo
 
 ## 🛠️Experimente você mesmo
 <div align="center">
@@ -161,6 +171,5 @@ _(Para os scripts funcionarem corretamente, crie uma cópia na sua própria past
 ![como fazer uma cópia](img/make_a_copy.png) </div>
 
 ---
-
 
 Feito com 💞 no Brasil💚💛
