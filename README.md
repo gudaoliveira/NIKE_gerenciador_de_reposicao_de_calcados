@@ -74,7 +74,8 @@ Com isso, criei uma coluna nova que seria fixa, para concatenar o SKU, e outra p
 // M é a coluna "sku"
 ```
 
-![raw_data sheet](img/raw_data.png)
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/983dae91-9b24-41e4-bc23-d0d4e2751ec6)
+
 
 Com isso, criei uma tela para receber esses dados e montar uma visualização organizada com os filtros necessários através da função QUERY
 ```
@@ -93,7 +94,7 @@ Essa Query basicamente verifica:
 
 <div align="center">
   
-![Captura de Tela](img/screenshot.png)</div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/d8d2dbba-3de5-4b85-bedc-faa794f35691)</div>
 
 ## 👷Coletando os dados dos repositores
 
@@ -113,7 +114,7 @@ E para que possa ter uma noção maior da performance, criei uma métrica chamad
 
 <div align="center">
   
-![Captura de Tela](img/dados_coletados.png)</div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/030a4307-13ae-4bec-a598-1e2b6d885e80)</div>
 
 ## 🧐Analisando os dados coletados 
 
@@ -121,7 +122,7 @@ Com mais de 30 dias de dados coletados, pude partir para analisar os resultados.
 
 <div align="center">
   
-![Captura de Tela](img/tabelas_de_analise.png)</div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/6eecbf79-908d-453e-acbb-2172a1e0117d)</div>
 
 Aqui podemos observar que: 
 - Os dias mais fortes da semana são `Domingo`, `Segunda` e `Sábado`
@@ -132,7 +133,7 @@ Diferente do que é intuitivo, ao observar esses dados distribuidos pela semana 
 
 <div align="center">
   
-![Captura de Tela](img/qtde_por_cpm.png)</div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/0e263aed-c0e0-479b-930b-a29d880038b0)</div>
 
 Aqui fica claro que a tendência é que quanto mais caixas, mais rápida é feita a reposição.
 
@@ -140,7 +141,7 @@ Também precisava entender, qual o horário que mais precisa de reposição, e p
 
 <div align="center">
   
-![Captura de Tela](img/qtde_por_hora.png)</div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/7e7eb30c-cc3b-4f88-a8e0-13fea7bd0218)</div>
 
 E com isso percebemos que o pico de reposição se dá entre os horários de 16:00 a 18:00
 
@@ -168,7 +169,7 @@ _(Para os scripts funcionarem corretamente, crie uma cópia na sua própria past
 <br>
 [Aprenda como dar permissões à sua conta para a execução dos scripts](https://github.com/gudaoliveira/apps_scripts_permissions)
 <br><br>
-![como fazer uma cópia](img/make_a_copy.png) </div>
+![image](https://github.com/gudaoliveira/gerenciador-de-reposicao-de-calcados/assets/20359615/d41ce9c7-c406-4b07-a196-c7611faa3ec1)</div>
 
 ---
 
